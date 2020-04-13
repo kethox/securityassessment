@@ -1,0 +1,8 @@
+Use to below commnad ot check if the SMB1 Protocol Settings is enabled or Disabled.
+
+c:\> Get-SmbServerConfiguration
+
+
+TO Disable the Settings of SMBv1 Protocol use the below command, Default setting is TRUE, which we need to change into False
+
+c:\> set-SmbServerConfiguration -EnableSMB1Protocol $false
